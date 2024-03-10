@@ -35,5 +35,3 @@ const swiper = new Swiper(".main-slider", {
 });
 
 //# sourceMappingURL=swiper.js.map
-
-//# sourceMappingURL=swiper.js.map

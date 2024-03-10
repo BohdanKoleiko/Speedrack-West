@@ -33,5 +33,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //# sourceMappingURL=amount.js.map
-
-//# sourceMappingURL=amount.js.map

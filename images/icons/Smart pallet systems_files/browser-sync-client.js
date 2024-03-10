@@ -126,5 +126,3 @@ if (location.protocol == "https:" && /^http:/.test(___browserSync___.socketUrl))
     }
 
 })(window, document, ___browserSync___);
-
-//# sourceMappingURL=browser-sync-client.js.map

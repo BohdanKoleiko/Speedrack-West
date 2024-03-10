@@ -38,5 +38,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //# sourceMappingURL=beltBidth.js.map
-
-//# sourceMappingURL=beltBidth.js.map

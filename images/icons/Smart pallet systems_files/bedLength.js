@@ -30,5 +30,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //# sourceMappingURL=bedLength.js.map
-
-//# sourceMappingURL=bedLength.js.map
