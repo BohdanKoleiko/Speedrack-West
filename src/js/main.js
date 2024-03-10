@@ -1,5 +1,7 @@
 "use strict";
 
+//Script that set additional option inputs as unchecked by default
+
 const initCheckBoxes = function (checkbox) {
    checkbox.dataset.checked = "";
    for (let item of checkbox.children) {
@@ -12,25 +14,25 @@ const initCheckBoxes = function (checkbox) {
 document.addEventListener("DOMContentLoaded", () => {
    const checkboxes = document.querySelectorAll(".input");
 
-   console.log(checkboxes);
+   if (checkboxes) {
+      checkboxes.forEach((checkbox) => {
+         initCheckBoxes(checkbox);
 
-   checkboxes.forEach((checkbox) => {
-      initCheckBoxes(checkbox);
+         checkbox.addEventListener("click", function (e) {
+            e.preventDefault;
 
-      checkbox.addEventListener("click", function (e) {
-         e.preventDefault;
-
-         for (let item of checkbox.children) {
-            if (item.tagName === "INPUT") {
-               if (item.checked) {
-                  item.checked = false;
-                  checkbox.dataset.checked = item.checked;
-               } else {
-                  item.checked = true;
-                  checkbox.dataset.checked = item.checked;
+            for (let item of checkbox.children) {
+               if (item.tagName === "INPUT") {
+                  if (item.checked) {
+                     item.checked = false;
+                     checkbox.dataset.checked = item.checked;
+                  } else {
+                     item.checked = true;
+                     checkbox.dataset.checked = item.checked;
+                  }
                }
             }
-         }
+         });
       });
-   });
+   }
 });
