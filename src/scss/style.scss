@@ -18,18 +18,37 @@
    color: inherit;
 }
 
-[class*="__container"] {
-   max-width: 1230px;
+*svg {
+   path {
+      fill: inherit;
+      stroke: inherit;
+   }
+}
+
+[class*="container"] {
+   max-width: 1400px;
    margin: 0 auto;
+   padding: 0 20px;
+
+   @media screen and (max-width: 576px) {
+      padding: 0 12px;
+   }
+}
+
+*input {
+   font-family: "SFProText";
 }
 
 html,
 body {
+   background-color: $bg-primary-color;
    min-height: 100%;
-   //font-family: "";
+   font-family: "SFProText";
 }
 
-[class$="__container"] {
-   max-width: 1360px;
-   margin: 0 auto;
-}
+@import "./components/button";
+@import "./components/input";
+@import "./components/info";
+@import "./components/breadcrumbs";
+
+@import "./main/main";
