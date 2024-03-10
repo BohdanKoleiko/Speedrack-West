@@ -1,0 +1,81 @@
+.options {
+   &__belt-width {
+   }
+
+   &__length {
+   }
+
+   &__bed-length-values {
+      display: flex;
+      gap: 8px;
+
+      > input {
+         max-width: 74px;
+      }
+   }
+
+   &__additional-options {
+   }
+
+   &__additional-options-values {
+      > label:not(:last-child) {
+         margin-bottom: 4px;
+      }
+   }
+
+   &__title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+   }
+
+   &__heading {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1;
+      color: $txt-primary-color;
+   }
+
+   &__belt-width-values {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 12px;
+   }
+
+   &__custom-bed-width {
+      display: none;
+      align-items: center;
+      gap: 8px;
+
+      > input {
+         max-width: 74px;
+      }
+   }
+
+   &__value {
+      width: 48px;
+   }
+
+   &__custom-value {
+      width: 100%;
+      max-width: 108px;
+   }
+
+   > div:not(:last-child) {
+      margin-bottom: 32px;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .options {
+      &__bed-length-values {
+         gap: 20px;
+
+         > input {
+            max-width: unset;
+         }
+      }
+   }
+}
